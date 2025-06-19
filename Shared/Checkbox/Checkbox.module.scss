@@ -1,0 +1,318 @@
+    $color-black: var(--app-primary-font-color);
+    //Default Label Size
+   .defaultCheckBox {
+        font-size: var(--app-extra-small-font-size);
+        font-family: var(--app-primary-font);
+        color: var(--app-primary-font-color);
+    }
+
+    .checkBoxLinkText{
+        font-family: var(--app-primary-font);
+        color: var(--app-primary-font-color);
+        text-decoration: underline;
+
+        &:hover{
+            color: var(--app-primary-font-color);
+        }
+    }
+
+    .checkBoxLinkTextInvalid{
+        font-family: var(--app-primary-font);
+        color: #dc3545;
+        text-decoration: underline;
+
+        &:hover{
+            color: #dc3545;
+        }
+    }
+
+    
+    .defaultCheckBox {
+        width: 100%;
+        margin: 0px auto;
+        position: relative;
+        display: block;
+        padding-left: 0;
+        label {
+            position: relative;
+            min-height: 34px;
+            display: block;
+            padding-left: 40px;
+            padding-top: 5px;
+            margin-bottom: 0;
+            font-weight: normal;
+            cursor: pointer;
+            span {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 4px 4px 4px 1px;
+                width: 21px;
+                height: 21px;
+                transition: transform 0.28s ease;
+                border-radius: 2px;
+                border: 1px solid var(--app-secondary-border-color)
+            }
+            &:after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 5px;
+                border-bottom: 1px solid #fff;
+                border-left: 1px solid #fff;
+                transform: rotate(-45deg) scale(0);
+                transition: transform ease 0.25s;
+                position: absolute;
+                top: 11px;
+                left: 7px;
+            }
+        }
+        input[type='checkbox'] {
+            width: auto;
+            opacity: 0.00000001;
+            position: absolute;
+            left: 0;
+            margin-left: -20px;
+            &:checked~label {
+                &:before {
+                    border: 1px solid var(--app-secondary-border-color);
+                    background-color: $color-black;
+                }
+                &:after {
+                    transform: rotate(-45deg) scale(1);
+                }
+            }
+            &:focus+label::before {
+                outline: 0;
+            }
+        }
+    }
+
+    //Large Label 
+      .largeCheckBox {
+        font-size: var(--app-small-font-size);
+        font-family: var(--app-primary-font);
+        color: var(--app-primary-font-color);
+    }
+    
+    .largeCheckBox {
+        width: 100%;
+        margin: 0px auto;
+        position: relative;
+        display: block;
+        padding-left: 0;
+        label {
+            position: relative;
+            min-height: 34px;
+            display: block;
+            padding-left: 40px;
+            padding-top: 5px;
+            margin-bottom: 0;
+            font-weight: normal;
+            cursor: pointer;
+            span {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 4px 4px 4px 1px;
+                width: 21px;
+                height: 21px;
+                transition: transform 0.28s ease;
+                border-radius: 2px;
+                border: 1px solid var(--app-secondary-border-color)
+            }
+            &:after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 5px;
+                border-bottom: 1px solid #fff;
+                border-left: 1px solid #fff;
+                transform: rotate(-45deg) scale(0);
+                transition: transform ease 0.25s;
+                position: absolute;
+                top: 11px;
+                left: 7px;
+            }
+        }
+        input[type='checkbox'] {
+            width: auto;
+            opacity: 0.00000001;
+            position: absolute;
+            left: 0;
+            margin-left: -20px;
+            &:checked~label {
+                &:before {
+                    border: 1px solid var(--app-secondary-border-color);
+                    background-color: $color-black;
+                }
+                &:after {
+                    transform: rotate(-45deg) scale(1);
+                }
+            }
+            &:focus+label::before {
+                outline: 0;
+            }
+        }
+    }
+
+    //Large Label Highlighted
+    .highlightedLargeCheckBox {
+        font-size: var(--app-small-font-size);
+        font-family: var(--app-primary-font);
+        color: var(--app-secondary-highlighted-text-color);
+    }
+    
+    .highlightedLargeCheckBox {
+        width: 100%;
+        margin: 0px auto;
+        position: relative;
+        display: block;
+        padding-left: 0;
+        label {
+            position: relative;
+            min-height: 34px;
+            display: block;
+            padding-left: 40px;
+            padding-top: 5px;
+            margin-bottom: 0;
+            font-weight: normal;
+            cursor: pointer;
+            span {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 4px 4px 4px 1px;
+                width: 21px;
+                height: 21px;
+                transition: transform 0.28s ease;
+                border-radius: 2px;
+                border: 1px solid var(--app-secondary-border-color)
+            }
+            &:after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 5px;
+                border-bottom: 1px solid #fff;
+                border-left: 1px solid #fff;
+                transform: rotate(-45deg) scale(0);
+                transition: transform ease 0.25s;
+                position: absolute;
+                top: 11px;
+                left: 7px;
+            }
+        }
+        input[type='checkbox'] {
+            width: auto;
+            opacity: 0.00000001;
+            position: absolute;
+            left: 0;
+            margin-left: -20px;
+            &:checked~label {
+                &:before {
+                    border: 1px solid var(--app-secondary-border-color);
+                    background-color: $color-black;
+                }
+                &:after {
+                    transform: rotate(-45deg) scale(1);
+                }
+            }
+            &:focus+label::before {
+                outline: 0;
+            }
+        }
+    }
+
+    //Shipping Address Large Label
+      .largeCheckBoxShipping {
+        font-size: var(--app-small-font-size);
+        font-family: var(--app-primary-font);
+        color: var(--app-primary-font-color);
+    }
+    
+    .largeCheckBoxShipping {
+        width: 100%;
+        margin: 0px auto;
+        position: relative;
+        display: block;
+        padding-left: 0;
+        label {
+            position: relative;
+            min-height: 34px;
+            display: block;
+            padding-left: 30px;
+            padding-right: 10px;
+            padding-top: 5px;
+            margin-bottom: 0;
+            font-weight: normal;
+            cursor: pointer;
+            span {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 4px;
+                width: 21px;
+                height: 21px;
+                transition: transform 0.28s ease;
+                border-radius: 2px;
+                border: 1px solid var(--app-secondary-border-color)
+            }
+            &:after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 5px;
+                border-bottom: 1px solid #fff;
+                border-left: 1px solid #fff;
+                transform: rotate(-45deg) scale(0);
+                transition: transform ease 0.25s;
+                position: absolute;
+                top: 12px;
+                left: 10px;
+            }
+        }
+        input[type='checkbox'] {
+            width: auto;
+            opacity: 0.00000001;
+            position: absolute;
+            left: 0;
+            margin-left: -20px;
+            &:checked~label {
+                &:before {
+                    border: 1px solid var(--app-secondary-border-color);
+                    background-color: $color-black;
+                }
+                &:after {
+                    transform: rotate(-45deg) scale(1);
+                }
+            }
+            &:focus+label::before {
+                outline: 0;
+            }
+        }
+    }

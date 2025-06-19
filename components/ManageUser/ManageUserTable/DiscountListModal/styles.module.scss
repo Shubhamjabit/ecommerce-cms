@@ -1,0 +1,37 @@
+.row{
+    border:1px solid rgb(211, 205, 205);
+    border-radius: 10px;
+    padding:20px;
+}
+
+.heading{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.details{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+
+.action_btns{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.update_btn{
+    border-color: green;
+    color:green;
+}
+
+.details_right {
+    >div{
+        span{
+            margin-right: 10px;
+            opacity: .8;
+        }
+    }
+}

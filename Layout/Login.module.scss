@@ -1,0 +1,76 @@
+.loginBackgroundColor {
+    background: var(--app-action-background-color);
+}
+
+.loginBox {
+    margin-top: 25%;
+    margin-bottom: 25%;
+    background: var(--app-primary-background-color);
+    border: 1px solid var(--app-primary-border-color);
+}
+
+.boxTopic {
+    font-family: var(--app-secondary-font);
+    font-size: var(--app-secoundary-title-font-size);
+    color: var(--app-sub-title-color);
+    text-align: left;
+}
+
+.innerBoxContainer {
+    padding: 10%;
+}
+
+.formLabelsLogin {
+    text-align: left;
+    font-family: var(--app-primary-font);
+    color: var(--app-sub-title-color);
+    font-size: var(--app-small-font-size);
+    font-style: var(--app-primary-font);
+    letter-spacing: 0px;
+}
+
+.loginFormControl {
+    border: 1px solid #C4C4C4;
+    border-radius: 2px;
+}
+
+.loginFormControl:hover {
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+.loginFormControl:focus {
+    border: 1px solid #000000;
+    border-radius: 2px;
+    // box-shadow: 0 0 0 0rem rgb(34 34 34);
+}
+
+.passwordDiv {
+    position: relative;
+}
+
+.eyeIcon {
+    color: var(--app-unfocused-text-color);
+    float: right;
+    margin-top: -30px;
+    padding-right: 10px;
+}
+
+.loginBtnCol {
+    margin-top: 2%;
+}
+
+
+.colAlignRight {
+    text-align: right;
+}
+
+.forgotPassword {
+    color: var(--app-primary-highlighted-text-color);
+    font-family: var(--app-primary-font);
+    font-size: var(--app-extra-small-font-size);
+    cursor: pointer;
+}
+.formBottom{
+    margin-bottom: 5px;
+}

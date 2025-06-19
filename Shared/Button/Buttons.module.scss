@@ -1,0 +1,230 @@
+// Dark Large Button
+.largeBtnDark{
+    font-family: var( --app-primary-font);
+    font-weight: var(--app-extra-bold-font-weight);
+    font-size: var(--app-default-font-size);
+    color: var(--app-secondary-btn-text-color);
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: var(--app-secondary-btn-background-color);
+    opacity: 1;
+    width: 100%;
+    height: 56px;
+    outline: none;
+    &:hover{
+        background: var(--app-nav-background-color);
+        box-shadow: none;
+        outline: none;
+    }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.largeBtnDarkInactive{
+    font-family: var(--app-primary-font);
+    font-weight: var(--app-extra-bold-font-weight);
+     font-size: var(--app-default-font-size);
+    color: var(--app-secondary-btn-text-color);
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: var(--app-unfocused-text-color);
+    opacity: 1;
+    width: 100%;
+    height: 56px;
+    outline: none;
+    border: none;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
+
+// Dark Default Button
+.defaultBtnDark{
+    font-family: var( --app-primary-font);
+    font-weight: var(--app-bold-font-weight);
+    font-size: var(--app-small-font-size);
+    color: var(--app-secondary-btn-text-color);
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: var(--app-secondary-btn-background-color);
+    opacity: 1;
+    width: 100%;
+    height: 48px;
+    outline: none;
+    &:hover{
+        background: var(--app-nav-background-color);
+        box-shadow: none;
+        outline: none;
+    }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}
+.defaultBtnDarkInactive{
+    font-family: var( --app-primary-font);
+    font-weight: var(--app-bold-font-weight);
+    font-size: var(--app-small-font-size);
+    color: var(--app-secondary-btn-text-color);
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: var(--app-unfocused-text-color);
+    opacity: 1;
+    width: 100%;
+    height: 48px;
+    outline: none;
+    border: none;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
+
+//Dark Button For Products
+.defaultBtnDarkProduct{
+    font-family: var( --app-primary-font);
+    font-weight: var(--app-bold-font-weight);
+    font-size: var(--app-extra-small-font-size);
+    color: var(--app-secondary-btn-text-color);
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: var(--app-secondary-btn-background-color);
+    opacity: 1;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    &:hover{
+        background: var(--app-nav-background-color);
+        box-shadow: none;
+        outline: none;
+    }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+// Transparent Large Button
+.largeBtnTransparent{
+    font-family: var( --app-primary-font);
+    font-weight: var(--app-extra-bold-font-weight);
+    font-size: var(--app-default-font-size);
+    color: var(--app-primary-btn-text-color);
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid var(--app-primary-btn-border-color);
+    opacity: 1;
+    width: 100%;
+    height: 56px;
+    outline: none;
+    &:hover{
+        box-shadow: none;
+        outline: none;
+        background: var(--app-primary-btn-background-color);
+        border: 1px solid var(--app-primary-btn-border-color);
+    }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+// Transparent Default Button
+.defaultBtnTransparent{
+    font-family: var( --app-primary-font);
+    font-weight: var(--app-bold-font-weight);
+    font-size: var(--app-small-font-size);
+    color: var( --app-primary-btn-text-color);
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid var(--app-primary-btn-border-color);
+    opacity: 1;
+    width: 100%;
+    height: 48px;
+    outline: none;
+    &:hover{
+        background: var(--app-primary-btn-background-color);
+        border: 1px solid var(--app-primary-btn-border-color);
+        box-shadow: none;
+        outline: none;
+    }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    i{
+        width: 40px;
+    }
+}
+
+// White Large Button
+.largeBtnWhite{
+    font-family: var( --app-primary-font);
+    font-weight: var(--app-extra-bold-font-weight);
+    font-size: var(--app-default-font-size);
+    color: var(--app-secondary-btn-text-color);
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: var(--app-primary-btn-background-color);
+    opacity: 1;
+    width: 100%;
+    height: 56px;
+    outline: none;
+    &:hover{
+        background: var(--app-secondary-background-color);
+        box-shadow: none;
+        outline: none;
+    }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+// White default Button
+.defaultBtnWhite{
+    font-family: var( --app-primary-font);
+    font-weight: var(--app-bold-font-weight);
+    font-size: var(--app-small-font-size);
+    color: var(--app-primary-btn-text-color);
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    background: var(--app-primary-btn-background-color);
+    opacity: 1;
+    width: 100%;
+    height: 48px;
+    outline: none;
+    &:hover{
+        background: var(--app-secondary-background-color);
+        box-shadow: none;
+        outline: none;
+    }
+
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}

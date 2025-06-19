@@ -1,0 +1,110 @@
+.ManageOrderWrapper {
+  width: 100%;
+  // margin: 10px 20px;
+  // padding: 5px;
+  .OrderTextArea {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .OrderTextArea .VrLine {
+    width: 2px;
+    height: 15px;
+    background: #f6870e;
+  }
+  .OrderTextArea span {
+    color: #f6870e;
+  }
+  .OrderTopHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    .OrderButtonsArea button {
+      border: solid 1px lightgray;
+      padding: 1px 16px;
+    }
+    .BackButton {
+      background-color: #313d54;
+      color: white;
+      font-size: 18px;
+      height: 2em;
+      min-width: 6em;
+    }
+    .OrderButtonsArea .Buttons {
+      background: #f6870e;
+      color: #fff;
+    }
+  }
+
+  .OrderContainerBox {
+    width: 100%;
+    margin: 0;
+    padding: 5px 15px;
+    .ItemBoxes {
+      border: solid 1px lightgray;
+      .Header {
+        background: rgb(4, 80, 105);
+        padding: 5px 10px;
+        color: #fff;
+      }
+      .ContentBody {
+        padding: 10px 20px;
+        .ListItem {
+          display: flex;
+          gap: 30px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .boxContainer {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        border: solid 1px lightgray;
+        background: #f6870e;
+        color: #fff;
+      }
+    }
+    .OrderDetails {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: solid 1px lightgray;
+      // border-bottom: solid 1px lightgray;
+      margin-top: 10px;
+      padding-top: 5px;
+      margin-bottom: 3px;
+      .Icons {
+        color: #cdcdcdd9 !important;
+        margin-top: -10px;
+      }
+      .OrderDetailsText label span {
+        color: rgb(4, 80, 105);
+        font-weight: 600;
+      }
+    }
+    .OrderTotalsBox {
+      direction: rtl;
+      .OrderTotals {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+.trackingNumberInput[disabled] {
+  cursor: not-allowed;
+}
+.spinner {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}

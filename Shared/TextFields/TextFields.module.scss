@@ -1,0 +1,86 @@
+.formText{
+    margin-bottom: 5px;
+    position: relative;
+}
+
+//Default label
+.defaultLabel {
+    text-align: left;
+    font-family: var(--app-primary-font);
+    color: var(--app-primary-font-color);
+    font-size: var(--app-small-font-size);
+    font-style: var(--app-primary-font);
+    letter-spacing: 0px;
+}
+
+//Secoundary Color Label
+.secoundaryLabel {
+    text-align: left;
+    font-family: var(--app-primary-font);
+    color: var(--app-sub-title-color);
+    font-size: var(--app-small-font-size);
+    font-style: var(--app-primary-font);
+    letter-spacing: 0px;
+}
+
+//small label
+.smallLable{
+    text-align: left;
+    font-family: var(--app-primary-font);
+    color: var(--app-secondary-font-color);
+    font-size: var(--app-extra-small-font-size);
+    font-style: var(--app-primary-font);
+    letter-spacing: 0px;
+}
+
+//Default TextBox 
+.defaultTextBox {
+    border: 1px solid var(--app-secondary-border-color);
+    border-radius: 2px;
+
+     ::placeholder {
+        color: var(--app-sub-title-color);
+        opacity: 0.4;
+        font-family: var(--app-primary-font);
+        font-size: var(--app-small-font-size);
+    }
+
+    &:hover{
+       border: 1px solid var(--app-primary-btn-border-color);
+    border-radius: 2px;
+    }
+    &:focus{
+      border: 1px solid var(--app-primary-btn-border-color);
+    border-radius: 2px;
+    // box-shadow: 0 0 0 0rem rgb(34 34 34);
+    }
+}
+
+ .defaultActionText {
+     color: var(--app-primary-highlighted-text-color);
+     font-family: var(--app-primary-font);
+     font-size: var(--app-extra-small-font-size);
+     float: right;
+     margin-top: -28px;
+     margin-right: 20px;
+     cursor: pointer;
+ }
+ .largeActionText{
+     color: var(--app-primary-highlighted-text-color);
+     font-family: var(--app-primary-font);
+     font-size: var(--app-small-font-size);
+     float: right;
+     margin-top: -28px;
+     margin-right: 20px;
+     cursor: pointer;
+ }
+
+ .largeActionTextDark{
+     color: var(--app-secondary-font-color);
+     font-family: var(--app-primary-font);
+     font-size: var(--app-small-font-size);
+     float: right;
+     margin-top: -28px;
+     margin-right: 20px;
+     cursor: pointer;
+ }

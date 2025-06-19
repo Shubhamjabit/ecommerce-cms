@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+
+// If you want to override variables do it here
+@import 'variables';
+
+// Import CoreUI styles
+@import '~@coreui/coreui/scss/coreui.scss';
+
+// If you want to add something do it here
+@import 'custom';
+
+//Import Open sans Semi Bold & Regular
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+//Import Muli
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import '~@coreui/coreui/scss/coreui';

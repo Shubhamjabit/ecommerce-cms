@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PickList</title>
+  </head>
+  <body style="font-size: 14px">
+    <div
+      class="Wrapper"
+      style="
+        width: calc(100% - 60px);
+        margin: auto;
+        height: auto;
+        font-size: 10px;
+      "
+      id="head-div"
+    >
+      <div
+        class="top-container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div class="logo" style="width: 50%">
+          <img src="../../../assets/sparky-logo.png" height="120" width="120" />
+        </div>
+        <div class="info" style="width: 100%">
+          <p
+            style="
+              width: 60%;
+              text-align: left;
+              margin-top: 80px;
+              line-height: 25px;
+            "
+          >
+            <span>Sparky Warehouse Australia Pty Ltd </span> <br />
+            <span>57-61 Freight Drive</span> <br />
+            <span>SOMERTON VIC AU 3062</span> <br />
+            <span>T +61</span> <br />
+            <span>sales@sparkywarehouse.com.au</span> <br />
+            <span>T + 61 3 9081 5202</span> <br />
+            <span>ACN 636 536 082</span> <br />
+            <span>ABN 50 636 536 082</span> <br />
+          </p>
+        </div>
+        <div class="order-info" style="width: 100%">
+          <h4
+            style="
+              font-size: 18px;
+              font-weight: 700;
+              margin-bottom: 10px;
+              text-align: left;
+            "
+          >
+            PICK LIST <span id="externalReference">61685201</span>
+            <!-- PICK LIST {{externalReference}} -->
+          </h4>
+          <div
+            class="order-box"
+            style="
+              width: calc(100% - 50px);
+              border: solid 1px black;
+              padding: 10px 25px;
+            "
+          >
+            <div
+              class="text-info"
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+              "
+            >
+              <label>Printed :</label>
+              <span>15 May 2023</span>
+            </div>
+            <div
+              class="text-info"
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+              "
+            >
+              <label>PO Ref :</label>
+              <span>600000001</span>
+            </div>
+            <div
+              class="text-info"
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+              "
+            >
+              <label>Cust Code :</label>
+              <span>RDGELE</span>
+            </div>
+            <div
+              class="text-info"
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+              "
+            >
+              <label>Order Date :</label>
+              <span id="createdDate">14 May 2023</span>
+            </div>
+            <div
+              class="text-info"
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+              "
+            >
+              <label>Entered By :</label>
+              <span>VinodM</span>
+            </div>
+            <div
+              class="text-info"
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+              "
+            >
+              <label>Dispatched By :</label>
+              <span><strong>15 May 2023</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="cust-details" style="display: center">
+          <div style="width: 40%">
+            <span style="font-weight: bold; text-decoration: underline"
+              >Customer Datails :</span
+            >
+          </div>
+          <p style="margin-top: 5px; width: 40%">
+            <span>Attn : </span>
+            Sharon Malik RDG Electrical Pty Ltd 432 San Mateo Avenue Mindura VIC
+            AU 3500
+          </p>
+        </div>
+        <div class="cust-details"></div>
+        <div class="cust-details"></div>
+      </div>
+      <div class="dispatch-instruction">
+        <span style="font-weight: bold">Dispatch Instruction:</span>
+        <div style="border: solid 2px lightgray; margin-top: 10px; width: 100%">
+          <ul>
+            <li style="list-style-type: square; margin-bottom: 8px">
+              Wait until all items are in stock (1 shipment)
+            </li>
+            <li style="list-style-type: square">
+              Use the best shipping option – Not Urgent
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="table-info" style="margin-top: 15px">
+        <table
+          style="border: solid 2px; border-collapse: collapse; width: 100%"
+          cellpadding="5"
+          id="table"
+        >
+          <thead style="background: lightgray">
+            <tr>
+              <th style="border: solid 2px">Item</th>
+              <th style="border: solid 2px">Sparky ID</th>
+              <th style="border: solid 2px">Product ID</th>
+              <th style="border: solid 2px">Product Description</th>
+              <th style="border: solid 2px">Quantity Ordered (Pack)</th>
+              <th style="border: solid 2px">Quantity Shipped (Pack)</th>
+              <th style="border: solid 2px">Quantity Pending (Pack)</th>
+            </tr>
+          </thead>
+          <!-- <tbody id="table-body">
+            <tr>
+              <td style="border: solid 2px">1</td>
+              <td style="border: solid 2px">S-A01-10023</td>
+              <td style="border: solid 2px">B06-ACXX/10H150</td>
+              <td style="border: solid 2px">
+                Bell Mouth Lug Half-Moon (4 pcs per pack)
+              </td>
+              <td style="border: solid 2px">100</td>
+              <td style="border: solid 2px">0</td>
+              <td style="border: solid 2px">100</td>
+            </tr>
+            <tr>
+              <td style="border: solid 2px">2</td>
+              <td style="border: solid 2px">S-A01-10023</td>
+              <td style="border: solid 2px">B06-ACXX/10H150</td>
+              <td style="border: solid 2px">
+                Bell Mouth Lug Half-Moon (4 pcs per pack)
+              </td>
+              <td style="border: solid 2px">100</td>
+              <td style="border: solid 2px">0</td>
+              <td style="border: solid 2px">100</td>
+            </tr>
+            <tr>
+              <td style="border: solid 2px">3</td>
+              <td style="border: solid 2px">S-A01-10023</td>
+              <td style="border: solid 2px">B06-ACXX/10H150</td>
+              <td style="border: solid 2px">
+                Bell Mouth Lug Half-Moon (4 pcs per pack)
+              </td>
+              <td style="border: solid 2px">100</td>
+              <td style="border: solid 2px">0</td>
+              <td style="border: solid 2px">100</td>
+            </tr>
+          </tbody> -->
+        </table>
+      </div>
+      <br /><br /><br /><br /><br />
+      <div
+        class="bottom-info"
+        style="
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+          margin: auto;
+        "
+      >
+        <div class="left-info">
+          <strong>DELIVER TO :</strong>
+          <p style="width: 40%; line-height: 24px">
+            RDG Electrical Pty Ltd Unit 9 32 Artisan Road Seven Hills NSW AU
+            2147
+          </p>
+        </div>
+        <div class="right-info">
+          <div style="margin-bottom: 5px">
+            <strong>Carrier:</strong> <span>TLOG-VFS</span>
+          </div>
+          <div><strong>Weight:</strong> <span>10kg</span></div>
+        </div>
+      </div>
+      <div
+        class="contact-info"
+        style="display: flex; gap: 100px; margin-top: 20px"
+      >
+        <div class="left-info">
+          <strong>Contact on delivery: </strong><br />
+          <div class="info" style="display: flex; gap: 40px">
+            <label>Name :</label> <span>Brade Harriis</span>
+          </div>
+          <div class="info" style="display: flex; gap: 40px">
+            <label>T/M :</label> <span>03 963001732 </span>
+          </div>
+        </div>
+        <div class="right-info">
+          <strong>Contact on delivery: </strong><br />
+          <div class="box-info" style="border: solid 2px">
+            <ul style="padding: 0 25px">
+              <li style="list-style-type: square">
+                Please delivery to Gate No. 15 at the back of the warehouse
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bottom-text"
+        style="width: 85%; margin: auto; margin-top: 20px"
+      >
+        <p
+          style="width: 90%; margin: auto; border-top: solid 1px; padding: 10px"
+        >
+          <i>
+            Certificate of Compliance- Sparky Warehouse Australia Pty Ltd
+            certifies that all products shipped under this pack note were
+            purchased solely from the original manufacturer or through the
+            manufacturer’s authorized distribution. The original manufacturer
+            warrants and certifies that the products they produce meet their
+            specifications. Evidence of this warranty and certification is
+            maintained at the manufacturer and/or at Sparky Warehouse Australia.
+            This pack note is the Evidance of Conformity that this shipment
+            meets the requirements of Sparky Warehouse Australia’s Quality
+            Management System and/or Customer Purchase Order requirements agreed
+            between Sparky Warehouse Australia and Customer.
+          </i>
+        </p>
+        <div style="margin-top: 10px; text-align: center">
+          <span style="font-weight: bold">THANK YOU FOR YOUR ORDER</span><br />
+          <strong style="font-weight: bold; font-size: 14px"
+            >THIS ORDER IS SUBJECTED TO ALL TERMS AND CONDITIONS DISPLAYED AT:
+            www.sparkywarehouse.com.au</strong
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      const orderDetails = {
+        id: 'baff54bc-b9c0-4916-a41d-ca1e719014bd',
+        externalReference: '230509356221',
+        invoiceID: '4289570e-c61f-432e-9cd9-780af631565a',
+        createdDate: '2023-05-09T00:16:56.000Z',
+        cbm: null,
+        storeID: null,
+        deliveryCharge: 142,
+        freightCost: 142,
+        totalAmount: 3442,
+        totalTaxes: null,
+        totalDiscount: null,
+        grandTotal: 3442,
+        paymentStatus: 'paid',
+        expectedDeliveryDate: null,
+        preferredDeliveryDate: null,
+        deliveryStatus: null,
+        initiatiedBy: 'WEB',
+        publicNotes: null,
+        privateNotes: null,
+        customerFName: 'test',
+        customerLName: 'ishaan',
+        customerEmail: 'testishaan@test.com',
+        customerPhone: '0888888888',
+        customerMobile: '0888888888',
+        createdAt: '2023-05-09T00:16:56.000Z',
+        updatedAt: '2023-05-09T00:16:56.000Z',
+        deletedAt: null,
+        syncStatus: 'cyrus=success',
+        exceptions: null,
+        status: 'Pending',
+        promoCode: null,
+        customerID: 'c7871c96-b3ba-41c5-b178-d810eabfb8cb',
+        erpNumber: '',
+        deliveryAddressStreet: '306 Coward St, Mascot NSW 2020, Australia',
+        deliveryAddressSuburb: 'Mascot',
+        deliveryAddressState: 'NSW',
+        deliveryAddressCountry: 'Australia',
+        deliveryAddressPostcode: 2020,
+      };
+      const itemDetails = [
+        {
+          id: '1b703005-9a85-4d63-a0ca-8a98498818f4',
+          orderID: 'baff54bc-b9c0-4916-a41d-ca1e719014bd',
+          productSimpleID: 282,
+          quantity: 100,
+          itemOriginalPrice: 7,
+          discountAmount: null,
+          discountPercentage: null,
+          itemPrice: 7,
+          lineItemTotalPrice: 700,
+          promotionCode: null,
+          eta: null,
+          deliveryMethod: null,
+          deliveryCompany: null,
+          deliveryDate: '2023-05-09T00:16:57.000Z',
+          pickupAddress: null,
+          deliveryAddressHasLift: null,
+          deliveryAddressFloor: null,
+          deliveryAddressHasStairs: null,
+          deliveryAddressStreet: '306 Coward St, Mascot NSW 2020, Australia',
+          deliveryAddressSuburb: 'Mascot',
+          deliveryAddressState: 'NSW',
+          deliveryAddressPostcode: 2020,
+          deliveryAddressCountry: 'Australia',
+          productID: '282',
+          SKU: null,
+          description: null,
+          productName: 'Insulated Bootlace / Ferrule, Single 100mm x 25mm2',
+          productImage: '/bc063601-3f29-4dd3-9812-b95893234129.png',
+          itemConfirmed: null,
+          initiatedBy: null,
+          fulfillmentSource: null,
+          fulfillmentDestination: null,
+          numberAllocated: null,
+          numberFulfilled: 22,
+          numberDispatched: null,
+          freightCost: null,
+          createdAt: '2023-05-09T00:16:57.000Z',
+          updatedAt: '2023-05-09T00:16:57.000Z',
+          deletedAt: null,
+          deliveryReference: null,
+          isFaulty: null,
+          createdDate: '2023-05-09T00:16:57.000Z',
+          cbm: null,
+          weight: null,
+          billingAddressStreet: null,
+          billingAddressSuburb: null,
+          billingAddressState: null,
+          billingAddressPostcode: null,
+          billingAddressCountry: null,
+          name: 'Insulated Bootlace / Ferrule, Single 100mm x 25mm2',
+        },
+        {
+          id: 'e36cb299-7c65-4712-8d5a-7eea3128edc2',
+          orderID: 'baff54bc-b9c0-4916-a41d-ca1e719014bd',
+          productSimpleID: 161,
+          quantity: 1,
+          itemOriginalPrice: 100,
+          discountAmount: null,
+          discountPercentage: null,
+          itemPrice: 100,
+          lineItemTotalPrice: 100,
+          promotionCode: null,
+          eta: null,
+          deliveryMethod: null,
+          deliveryCompany: null,
+          deliveryDate: '2023-05-09T00:16:58.000Z',
+          pickupAddress: null,
+          deliveryAddressHasLift: null,
+          deliveryAddressFloor: null,
+          deliveryAddressHasStairs: null,
+          deliveryAddressStreet: '306 Coward St, Mascot NSW 2020, Australia',
+          deliveryAddressSuburb: 'Mascot',
+          deliveryAddressState: 'NSW',
+          deliveryAddressPostcode: 2020,
+          deliveryAddressCountry: 'Australia',
+          productID: '161',
+          SKU: null,
+          description: null,
+          productName: 'A05-AMXS/5H1.5RE',
+          productImage: '/434c9249-71ee-4fa6-a98a-5ec25ff83d20.png',
+          itemConfirmed: null,
+          initiatedBy: null,
+          fulfillmentSource: null,
+          fulfillmentDestination: null,
+          numberAllocated: null,
+          numberFulfilled: null,
+          numberDispatched: null,
+          freightCost: null,
+          createdAt: '2023-05-09T00:16:58.000Z',
+          updatedAt: '2023-05-09T00:16:58.000Z',
+          deletedAt: null,
+          deliveryReference: null,
+          isFaulty: null,
+          createdDate: '2023-05-09T00:16:58.000Z',
+          cbm: null,
+          weight: null,
+          billingAddressStreet: null,
+          billingAddressSuburb: null,
+          billingAddressState: null,
+          billingAddressPostcode: null,
+          billingAddressCountry: null,
+          name: 'A05-AMXS/5H1.5RE',
+        },
+        {
+          id: 'ec1d501b-37bf-471a-8d0c-801afc0f4107',
+          orderID: 'baff54bc-b9c0-4916-a41d-ca1e719014bd',
+          productSimpleID: 74,
+          quantity: 50,
+          itemOriginalPrice: 50,
+          discountAmount: null,
+          discountPercentage: null,
+          itemPrice: 50,
+          lineItemTotalPrice: 2500,
+          promotionCode: null,
+          eta: null,
+          deliveryMethod: null,
+          deliveryCompany: null,
+          deliveryDate: '2023-05-09T00:16:57.000Z',
+          pickupAddress: null,
+          deliveryAddressHasLift: null,
+          deliveryAddressFloor: null,
+          deliveryAddressHasStairs: null,
+          deliveryAddressStreet: '306 Coward St, Mascot NSW 2020, Australia',
+          deliveryAddressSuburb: 'Mascot',
+          deliveryAddressState: 'NSW',
+          deliveryAddressPostcode: 2020,
+          deliveryAddressCountry: 'Australia',
+          productID: '74',
+          SKU: null,
+          description: null,
+          productName: 'A02-AGXX/25B50',
+          productImage: '/615e7bd8-501a-4354-9ea1-cc8807ca2d97.png',
+          itemConfirmed: null,
+          initiatedBy: null,
+          fulfillmentSource: null,
+          fulfillmentDestination: null,
+          numberAllocated: null,
+          numberFulfilled: 16,
+          numberDispatched: null,
+          freightCost: null,
+          createdAt: '2023-05-09T00:16:57.000Z',
+          updatedAt: '2023-05-09T00:16:57.000Z',
+          deletedAt: null,
+          deliveryReference: null,
+          isFaulty: null,
+          createdDate: '2023-05-09T00:16:57.000Z',
+          cbm: null,
+          weight: null,
+          billingAddressStreet: null,
+          billingAddressSuburb: null,
+          billingAddressState: null,
+          billingAddressPostcode: null,
+          billingAddressCountry: null,
+          name: 'A02-AGXX/25B50',
+        },
+      ];
+      document.getElementById('externalReference').innerText =
+        orderDetails.externalReference;
+      document.getElementById('createdDate').innerText =
+        orderDetails.createdDate.split('T')[0];
+      let table = document.getElementById('table');
+
+      let i = 1;
+      for (let item of itemDetails) {
+        let tr = document.createElement('tr');
+
+        let td0 = document.createElement('td');
+        td0.style.border = 'solid 2px';
+        td0.textContent = i;
+        tr.appendChild(td0);
+
+        let td1 = document.createElement('td');
+        td1.style.border = 'solid 2px';
+        td1.textContent = item.productName;
+        tr.appendChild(td1);
+
+        let td2 = document.createElement('td');
+        td2.style.border = 'solid 2px';
+        td2.textContent = item.productName;
+        tr.appendChild(td2);
+
+        let td3 = document.createElement('td');
+        td3.style.border = 'solid 2px';
+        td3.textContent = item.productName;
+        tr.appendChild(td3);
+
+        let td4 = document.createElement('td');
+        td4.style.border = 'solid 2px';
+        td4.textContent = item.quantity;
+        tr.appendChild(td4);
+
+        let td5 = document.createElement('td');
+        td5.style.border = 'solid 2px';
+        td5.textContent = item.numberFulfilled ? item.numberFulfilled : 0;
+        tr.appendChild(td5);
+
+        let td6 = document.createElement('td');
+        td6.style.border = 'solid 2px';
+        td6.textContent = item.quantity - item.numberFulfilled;
+        tr.appendChild(td6);
+
+        table.appendChild(tr);
+        i++;
+      }
+      const headDiv = document.getElementById('head-div');
+      console.log(headDiv.outerHTML);
+      // export headDiv;
+    </script>
+    <script type="module"></script>
+  </body>
+</html>

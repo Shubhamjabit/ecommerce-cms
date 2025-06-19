@@ -1,0 +1,286 @@
+// Here you can add other styles
+.loginBackground {
+  background: var(--app-login-background-color);
+}
+.logoImage {
+  margin-bottom: 25px;
+}
+.loginCard {
+  box-shadow: 0px 0px 20px #00000014;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.userSearch {
+  background-color: #f3f5f6;
+}
+
+.loginHeader {
+  font-family: var(--app-primary-font);
+  font-weight: var(--app-semi-bold-font-weight);
+  color: var(--app-primary-font-color);
+  font-size: var(--app-secoundary-title-font-size);
+}
+
+.text-muted {
+  font-family: var(--app-primary-font);
+  font-weight: var(--app-primary-font-weight);
+  font-size: var(--app-default-font-size);
+  color: var(--app-primary-font-color) !important;
+}
+.inputGroupLogin {
+  position: relative;
+}
+.formIcon {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: var(--app-icon-color);
+}
+.formInputLogin {
+  padding-left: 50px;
+  border: 1px solid var(--app-default-border-color) !important;
+  border-radius: 4px !important;
+  &:focus {
+    z-index: 0 !important;
+  }
+  ::placeholder {
+    color: var(--app-primary-font-color);
+    opacity: 0.6;
+    font-family: var(--app-secondary-font);
+    font-size: var(--app-small-font-size);
+  }
+}
+.loginButton {
+  background-color: black !important;
+  font-family: var(--app-primary-font);
+  font-weight: var(--app-semi-bold-font-weight);
+  font-size: var(--app-small-font-size);
+  color: var(--app-button-font-color);
+  height: 42px;
+  width: 113px;
+  border-radius: 4px;
+  border: none !important;
+  // &:hover {
+  //   background-color: black!important;
+  // }
+  // &:focus {
+  //   background-color: black!important;
+  //   box-shadow: none !important;
+  // }
+}
+.forgotPasswordLink {
+  font-family: var(--app-primary-font);
+  font-size: var(--app-extra-small-font-size);
+  font-weight: var(--app-semi-bold-font-weight);
+  color: var(--app-light-font-color);
+  box-shadow: none;
+  border: none;
+
+  &:hover {
+    color: var(--app-light-font-color);
+    text-decoration: none;
+    box-shadow: none;
+    border: none;
+  }
+  &:focus {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+.dashboard-addNewProduct {
+  background-color: #313d54;
+  text-align: left;
+  font: normal normal 600 14px/16px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.dashboard-productTable-action-button-remove {
+  background-color: #ffffff;
+  text-align: left;
+  font: normal normal 600 12px/16px Open Sans;
+  letter-spacing: 0px;
+  color: #757575;
+  margin-left: 5px;
+}
+.dashboard-productTable-action-button-remove:hover {
+  background-color: #d03144;
+  text-align: left;
+  font: normal normal 600 12px/16px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+.dashboard-productTable-action-button-edit {
+  background-color: #ffffff;
+  text-align: left;
+  font: normal normal 600 12px/16px Open Sans;
+  letter-spacing: 0px;
+  color: #757575;
+  margin-left: 5px;
+}
+.dashboard-productTable-action-button-edit:hover {
+  background-color: #5f717a;
+  text-align: left;
+  font: normal normal 600 12px/16px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.dashboard-productTable-action {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.dashboard-productTable-imageCol {
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.editProduct-imagePicker {
+  margin-left: 5px;
+}
+.add-relatedProducts-modal {
+  background-color: #f3f5f6;
+  // padding-left: 30px;
+  // height: 852px;
+}
+.add-relatedProducts-top-text {
+  padding-top: 10px;
+  padding-left: -520px;
+}
+.add-relatedProducts-searchBox {
+  padding-bottom: 20px;
+}
+.related-product-item {
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 2px;
+  opacity: 1;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.related-product-item-image {
+  padding-bottom: 15px;
+}
+.related-product-item-name {
+  padding-top: 8px;
+  padding-left: 10px;
+  text-align: left;
+  font: normal normal bold 12px/17px Muli;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+.related-product-item-price {
+  text-align: left;
+  padding-top: 8px;
+  padding-left: 10px;
+  font: normal normal bold 12px/17px Muli;
+  letter-spacing: 0px;
+  color: #db5151;
+  opacity: 1;
+}
+.related-product-item-button {
+  padding-top: 15px;
+  padding-left: 65px;
+  align-items: flex-end;
+  text-align: left;
+  font: normal normal bold 12px/17px Muli;
+  letter-spacing: 0px;
+  color: #db5151;
+  opacity: 1;
+}
+
+.related-product-item-top-name {
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  font: normal normal 600 12px/16px Open Sans;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+.homePage-tableRow-lable {
+  text-align: left;
+  font: normal normal 600 12px/16px Open Sans;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-bottom: -10px;
+  padding-bottom: -10px;
+}
+.homePage-tableRow-text {
+  text-align: left;
+  font: normal normal normal 14px/18px Muli;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 0.6;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.logout-outlined-icon {
+  padding-right: 15px;
+}
+.sider {
+  min-width: 250px !important;
+  max-width: 250px !important;
+  width: 250px !important;
+}
+.logo {
+  // padding-top: 5px;
+  background-color: #ffffff;
+  border: 1px solid #dadce0;
+}
+.ant-tooltip-inner a,
+.ant-tooltip-inner a:active,
+.ant-tooltip-inner a:hover {
+  color: #fff !important;
+}
+
+// .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+//   background-color: #65a2a3 !important;
+// }
+
+// .ant-menu.ant-menu-dark,
+// .ant-menu-dark .ant-menu-sub,
+// .ant-menu.ant-menu-dark .ant-menu-sub {
+//   color: rgba(255, 255, 255, 0.65);
+//   background: #313d54 !important;
+// }
+
+.ant-table-cell {
+  text-align: center;
+}
+.ant-menu-submenu {
+  text-align: left;
+  font: normal normal 600 12px/16px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.ant-layout-content {
+  min-height: 900px !important;
+}
+// .ant-btn ant-btn-primary styles_loginButton__2C88L
+// ant-btn ant-btn-primary
+//#313D54
+.MainContainer {
+  //background-color: #fff;
+  padding: 40px 20px;
+  margin: 20px;
+}
+.styles_cardbody__20uhf .ant-card-body {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.Header_Upload__R2ziL .ant-upload.ant-upload-select-picture-card {
+  height: auto;
+  width: auto;
+  padding: 5px 20px;
+}
+#upload-div .ant-upload.ant-upload-select-picture-card {
+  height: 32px !important;
+}

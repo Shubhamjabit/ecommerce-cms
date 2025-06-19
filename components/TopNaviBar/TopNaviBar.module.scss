@@ -1,0 +1,36 @@
+.mainRow {
+  justify-content: space-between !important;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-bottom: 1px solid #dadce0;
+}
+.colStart {
+  padding-left: 20px;
+  cursor: pointer;
+}
+.logoutButton {
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.path {
+  text-align: left;
+  font: normal normal normal 14px/19px Open Sans;
+  letter-spacing: 0px;
+  color: #757575;
+  opacity: 1;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.arrow {
+  color: #757575;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.selectedBC {
+  color: #65a2a3;
+}

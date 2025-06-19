@@ -1,0 +1,70 @@
+.CardBody {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  color: #ffffff;
+}
+
+.AddNewItemIcon {
+  font-size: 35px;
+  color: #313d54;
+}
+
+.CardBody > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+  background: #fff;
+  padding: 16px;
+}
+
+.CardBody > .ant-tabs-content-holder {
+  background: #fff;
+  padding: 16px;
+}
+
+.CartBody > .ant-tabs-card > .ant-tabs-nav::before {
+  display: none;
+}
+
+.CartBody > .ant-tabs-card .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+.CartBody > .ant-tabs-card .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+
+.Text {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.DashedOutlined {
+  margin-top: -8px;
+}
+.antUploadDragIcon {
+  color: #46556c;
+  font-size: 30px;
+}
+.submitButton {
+  margin-right: 50px;
+  background-color: #313d54;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.uploadBox > .ant-upload {
+  width: 100%;
+  height: 187px;
+}
+
+.bannersTab {
+  background: #ffffff;
+}
+
+.bannersTabs {
+  margin: 0;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: '#363636';
+}

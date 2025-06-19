@@ -1,0 +1,35 @@
+// Variable overrides
+:root{
+
+    //Colors
+    --app-login-background-color:#F0F4F7;
+
+
+    --app-primary-font-color:#333333;
+    --app-light-font-color:#65A2A3;
+    --app-button-font-color:#FFFFFF;
+    --app-icon-color:#757575;
+
+    --app-default-border-color:#C4C4C4;
+
+    --app-default-button-color:#313D54;
+
+
+
+    //Fonts
+     --app-primary-font:"Open Sans";
+    --app-secondary-font:"Muli";
+
+    --app-primary-font-weight:400;
+    --app-secondary-font-weight:400;
+    --app-semi-bold-font-weight: 600;
+    --app-bold-font-weight: 700;
+    --app-extra-bold-font-weight: 800;
+
+    --app-extra-small-font-size:12px;
+    --app-small-font-size:14px;
+    --app-default-font-size:16px;
+    --app-sub-title-font-size:28px;
+    --app-secoundary-title-font-size:34px;
+    --app-title-font-size:48px;
+}

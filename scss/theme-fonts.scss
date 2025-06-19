@@ -1,0 +1,35 @@
+:root{
+    --app-primary-font:"Muli";
+    --app-secondary-font:'Playfair Display';
+
+    // to be removed ->
+    --app-bold-font: "Muli", Bold;
+    --app-extra-bold-font: "Muli", ExtraBold;
+    --app-default-font:"Muli";
+    // <- to be removed
+
+    --app-primary-font-weight:400;
+    --app-secondary-font-weight:400;
+    --app-semi-bold-font-weight: 600;
+    --app-bold-font-weight: 700;
+    --app-extra-bold-font-weight: 800;
+
+
+    --app-extra-small-font-size:12px;
+    --app-small-font-size:14px;
+    --app-default-font-size:16px;
+    --app-sub-title-font-size:28px;
+    --app-secoundary-title-font-size:38px;
+    --app-title-font-size:48px;
+
+
+
+    --app-mb-extra-small-font-size:12pt;
+    --app-mb-small-font-size:14pt;
+    --app-mb-default-font-size:16pt;
+    --app-mb-sub-title-font-size:28pt;
+    --app-mb-secoundary-title-font-size:38pt;
+    --app-mb-title-font-size:48pt;
+
+}
+

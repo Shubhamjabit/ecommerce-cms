@@ -1,0 +1,194 @@
+.DashboardPage {
+  // background-color: #fff;
+  //padding: 40px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.criclebox {
+  box-shadow: 0px 20px 27px #0000000d;
+  border-radius: 12px;
+}
+.number span {
+  font-weight: 600;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.number h3 {
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.number h3 small {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.number h3 small.bnb2 {
+  color: #52c41a;
+  font-weight: 700;
+}
+
+.number h3 small.redtext {
+  color: red;
+}
+.mb24 {
+  margin-bottom: 24px;
+}
+.criclebox .iconbox {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  background: #1890ff;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  line-height: 45px;
+}
+
+.criclebox .iconbox span {
+  color: #fff;
+  font-size: 24px;
+}
+
+.chartvistior {
+  margin-top: 30px;
+}
+
+.chartvistior h5 {
+  margin: 0px;
+  font-weight: 700;
+}
+
+.chartvistior .lastweek {
+  color: #8c8c8c;
+  font-weight: 600;
+}
+.chartvistior .lastweek .bnb2 {
+  color: #52c41a;
+  font-weight: 700;
+}
+
+.chartvistior .chartvisitorcount h4 {
+  margin: 0px;
+  font-weight: 700;
+}
+
+.chartvistior .chartvisitorcount span {
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+}
+
+.barchart {
+  background: transparent
+    linear-gradient(62deg, #00369e 0%, #005cfd 53%, #a18dff 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 4px 6px #0000001f;
+
+  border-radius: 8px;
+}
+
+.linechart h5 {
+  font-weight: 700;
+  margin: 0px;
+}
+.linechart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.linechart .lastweek {
+  color: #8c8c8c;
+  font-weight: 600;
+}
+.linechart .lastweek .bnb2 {
+  color: #52c41a;
+  font-weight: 700;
+}
+.sales ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.sales ul li:first-child span.anticon {
+  color: #b37feb;
+}
+
+.sales ul li:last-child span.anticon {
+  color: #1890ff;
+}
+.sales ul li {
+  color: #8c8c8c;
+  margin-bottom: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+.cardbody {
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: 0px 20px 27px #0000000d;
+  border-radius: 12px;
+}
+
+.Trans {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.Trans h5 {
+  margin: 0px;
+  color: #141414;
+  font-weight: 700;
+}
+
+.tableResponsive table th {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: left;
+  border-bottom: 1px solid #0000000d;
+  color: #8c8c8c;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.tableResponsive table th:last-child {
+  text-align: right;
+}
+.tableResponsive table td {
+  text-align: left;
+  border-bottom: 1px solid #0000000d;
+  padding: 16px 16px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  color: #8c8c8c;
+}
+.tableResponsive table td:last-child {
+  text-align: right;
+}
+.tableResponsive table td h6 .Avatar {
+  margin-right: 10px;
+}
+.tableResponsive table td h6 {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.tableResponsive .User {
+  display: grid;
+}
+
+.tableResponsive .User span {
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.width100 {
+  width: 100%;
+}
